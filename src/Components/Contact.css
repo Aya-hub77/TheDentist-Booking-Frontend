@@ -1,0 +1,89 @@
+footer .contact {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+    justify-content: space-around;
+    border-top: 2px solid #044326;
+}
+.contact h2 {
+    font-size: 30px;
+    color: #01180E;
+    margin-bottom: 20px;
+}
+.contact-info .item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.contact-info .item .icon {
+    font-size: 30px;
+    color: #044326;
+}
+.contact-info .item p {
+    font-size: 20px;
+    font-weight: 500;
+}
+.contact-info .socials {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    margin: 0 auto;
+}
+.contact-info .socials .icon {
+    font-size: 36px;
+}
+.contact-info .socials .facebook {
+    color: #1877F2;
+}
+.contact-info .socials .instagram {
+    color: #E1306C;
+}
+.contact-info .socials .twitter {
+    color: #1DA1F2;
+}
+.contact-info h3 {
+    font-size: 20px;
+    color: #333;
+    margin: 20px 0;
+}
+.contact iframe {
+    width: 300px;
+    height: 300px;
+}
+footer .legal-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #044326;
+    color: white;
+    padding: 10px;
+    margin-bottom: -20px;
+}
+footer .copyright {
+    text-align: center;
+    font-weight: 500;
+}
+footer .legal-links div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 14px;
+    gap: 5px;
+}
+footer .legal-links div .item:hover {
+    text-decoration: underline;
+}
+@media(min-width:800px){
+    footer .contact {
+        flex-direction: row;
+    }
+    .contact iframe {
+        width: 500px;
+    }
+}

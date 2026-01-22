@@ -1,0 +1,284 @@
+.admin-nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 32px;
+    height: 60px;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.admin-nav .logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.admin-nav .logo img {
+    height: 40px;
+}
+.admin-nav .logo h1 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #044326;
+}
+.admin-nav .hamburger {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #044326;
+}
+.admin-nav .nav-links {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    height: 30%;
+    width: 50%;
+    max-width: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-width 0.5s ease, opacity 0.5s ease;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.1); 
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-top: 30px;
+}
+.admin-nav .nav-links.open {
+    max-width: 500px;
+    opacity: 1;
+}
+.admin-nav .nav-links li {
+    list-style: none;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px;
+}
+.admin-hello {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+.admin-hello h2 {
+    color: #222;
+}
+.admin-hello p {
+    font-size: 15px;
+    color: #444;
+}
+.admin-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin: 10px 40px;
+}
+.admin-card {
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+    color: #065f46;
+    background-color: #E8F5E9;
+}
+.admin-card:hover {
+    transform: translateY(-5px);
+}
+.admin-card p {
+    font-weight: 500;
+}
+.admin-card h3 {
+    font-size: 26px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.admin-card span {
+    font-size: 13px;
+}
+.admin-appointments h3, .admin-analytics h3, .admin-contact h3, .admin-settings h3 {
+    font-size: 26px;
+    color: #222;
+    margin: 20px 20px 0;
+}
+.admin-appointments .dropdown {
+    width: 200px;
+    position: absolute;
+    right: 30px;
+}
+.admin-appointments .table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+.appointments-table {
+    width: 90%;
+    margin: 90px auto;
+    border-collapse: collapse;
+    background: #ffffff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    overflow-x: auto;
+}
+.appointments-table thead {
+    background: #065f46;
+    color: #ffffff;
+}
+.appointments-table th,
+.appointments-table td {
+    padding: 14px 16px;
+    text-align: left;
+    font-size: 14px;
+}
+.appointments-table th {
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 0.8px;
+}
+.appointments-table tbody tr {
+    border-bottom: 1px solid #e5e7eb;
+    transition: background 0.2s ease;
+}
+.appointments-table tbody tr:hover {
+    background: #f8fafc;
+}
+.appointments-table tbody tr:last-child {
+    border-bottom: none;
+}
+.admin-analytics .charts {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 40px;
+}
+.admin-analytics .chart {
+    width: 100%;
+    margin: 0 auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+}
+.admin-analytics h4 {
+    font-size: 23px;
+    color: #333;
+    margin-bottom: 10px;
+}
+.admin-contact, .admin-settings {
+    width: 80%;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    padding: 30px;
+    margin: 40px auto;
+}
+.admin-contact form, .admin-settings form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-top: 20px;
+}
+.admin-contact form div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 18px;
+}
+.admin-contact label, .admin-settings label {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    color: #34495e;
+    width: 100%;
+}
+.admin-contact input, .admin-settings input {
+    width: 100%;
+    margin-top: 6px;
+    padding: 10px 12px;
+    border: 1px solid #bdc3c7;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: all 0.2s;
+}
+.admin-contact input:focus, .admin-settings input:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+    outline: none;
+}
+.admin-contact button, .admin-settings button {
+    padding: 12px;
+    background-color: #065f46;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+.admin-contact button:hover, .admin-settings button:hover {
+    background-color: #064332;
+    transform: translateY(-1px);
+}
+.admin-contact button:active, .admin-settings button:active {
+    transform: translateY(1px);
+}
+.admin-settings h4 {
+    font-size: 18px;
+    color: #444;
+    margin-top: 30px;
+}
+.admin-settings form div {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.admin-settings .header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.admin-settings .header button {
+    padding: 8px 10px;
+}
+@media (min-width:800px) {
+    .admin-nav .hamburger {
+        display: none;
+    }
+    .admin-nav .nav-links {
+        position: static;
+        height: auto;
+        width: auto;
+        overflow: visible;
+        max-width: none;
+        opacity: 1;
+        transition: none;
+        flex-direction: row;
+        box-shadow: none;
+        padding-top: 0;
+    }
+    .admin-nav .nav-links li a {
+        color: #222;
+        font-weight: 600;
+        transition: color 0.2s ease, background-color 0.2s ease;
+        padding: 4px 8px;
+        border-radius: 4px;
+    }
+    .admin-nav .nav-links li a:hover {
+        background-color: #e6f2ed;
+        color: #022517;
+    }
+    .admin-analytics .charts {
+        flex-direction: row;
+    }
+    .admin-contact form div {
+        flex-direction: row;
+        gap: 50px;
+    }
+    .admin-settings form div {
+        flex-wrap: nowrap;
+    }
+}

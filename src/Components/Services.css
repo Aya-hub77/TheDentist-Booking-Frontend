@@ -1,0 +1,42 @@
+.services {
+    padding: 30px;
+    background: url("../assets/background.jpg") no-repeat center / cover;
+    width: 100%;
+}
+.services h2 {
+    text-align: center;
+    font-size: 30px;
+    color: #01180E;
+    margin-bottom: 20px;
+}
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.services-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.services-item:hover {
+    transform: scale(1.1);
+}
+.services-item img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.services-item h3 {
+    font-size: 24px;
+    color: #044326;
+    margin: 15px 0;
+}
+.services-item p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+}

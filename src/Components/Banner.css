@@ -1,0 +1,36 @@
+.banner {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    background-color: #044326;
+    color: white;
+    justify-content: space-around;
+    padding: 0;
+    z-index: 999;
+}
+.banner div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.banner .icon {
+    font-size: 18px;
+}
+.banner p {
+    font-size: 14px;
+}
+@media(min-width:800px){
+    .banner {
+        padding: 0 40px;
+    }
+    .banner .icon {
+        font-size: 22px;
+    }
+    .banner p {
+        font-size: 16px;
+    }
+}

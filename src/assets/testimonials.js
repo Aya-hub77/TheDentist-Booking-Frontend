@@ -1,0 +1,6 @@
+export const testimonials = [
+    {id: 1, star: "⭐⭐⭐⭐⭐", review:"Dr. Johnson and his team are amazing! They made me feel completely at ease during my visit, and my cleaning was thorough but gentle. Highly recommend if you’re nervous about the dentist like I am!", name:"Emily R"},
+    {id: 2, star: "⭐⭐⭐⭐⭐", review:"Professional, friendly, and efficient. I had a cavity filled and barely felt a thing. The office is modern and clean, and the staff goes above and beyond to make appointments convenient.", name:"Marcus L"},
+    {id: 3, star: "⭐⭐⭐⭐", review:"Good experience overall. The hygienist was very careful and explained everything clearly. The only reason I didn’t give 5 stars is the wait time was a bit longer than expected.", name:"Sophia K"},
+    {id: 4, star: "⭐⭐⭐⭐⭐", review:"Best dentist I’ve been to in years! Dr. Johnson takes the time to answer questions and really cares about your comfort. I feel confident about my dental health now thanks to him and his team.", name:"David T"},
+];

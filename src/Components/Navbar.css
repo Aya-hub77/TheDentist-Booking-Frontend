@@ -1,0 +1,91 @@
+.navbar {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px auto;
+    padding: 0 10px;
+    border-radius: 70px;
+    background-color: white;
+    z-index: 1000;
+    position: sticky;
+    top: 40px;
+}
+.navbar img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+.navbar .hamburger {
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    color: black;
+    position: absolute;
+    right: 30px;
+}
+.navbar .nav-links {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 70%;
+    max-width: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-width 0.5s ease, opacity 0.5s ease;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.2); 
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding-top: 100px;
+}
+.navbar .nav-links.open {
+    max-width: 500px;
+    opacity: 1;
+}
+.navbar .nav-links li {
+    list-style: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+.navbar .book {
+    padding: 10px 12px;
+    border-radius: 16px;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    background-color: #044326;
+    cursor: pointer;
+    border: #044326;
+    display: block;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+@media(min-width:800px){
+    .navbar .hamburger {
+        display: none;
+    }
+    .navbar .nav-links {
+        position: static;
+        height: auto;
+        width: auto;
+        overflow: visible;
+        max-width: none;
+        opacity: 1;
+        transition: none;
+        flex-direction: row;
+        box-shadow: none;
+        padding-top: 0;
+    }
+    .navbar .book {
+        display: block;
+    }
+    .navbar .book:hover {
+        transform: scale(1.1);
+        background-color: #06693A;
+    }
+}

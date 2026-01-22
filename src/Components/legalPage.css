@@ -1,0 +1,99 @@
+.legal {
+  display: flex;
+  flex-direction: column;
+  background-color: #f9fafb;
+  color: #1f2937;
+}
+.legal .nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+.legal .nav img {
+  height: 50px;
+}
+.legal .nav button {
+  padding: 0.6rem 1.2rem;
+  background-color: #044326;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+.legal .nav button:hover {
+  background-color: #03301b;
+}
+.legal main {
+  max-width: 900px;
+  margin: 2.5rem auto;
+  padding: 2.5rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+}
+.legal main h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+  color: #01180E;
+}
+.legal main h5 {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #6b7280;
+  margin-bottom: 1.8rem;
+}
+.legal main h2 {
+  margin-top: 2rem;
+  margin-bottom: 0.6rem;
+  font-size: 1.3rem;
+  color: #166534;
+}
+.legal main h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #05130b;
+}
+.legal main p {
+  line-height: 1.7;
+  font-size: 0.95rem;
+  margin-bottom: 0.8rem;
+  color: #374151;
+}
+.legal main ul {
+  margin: 0.8rem 0 1.2rem 1.2rem;
+  padding-left: 1rem;
+}
+.legal main li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+.legal .foot {
+  margin-top: auto;
+  padding: 1.2rem;
+  text-align: center;
+  background-color: #ffffff;
+  border-top: 1px solid #e5e7eb;
+}
+.legal .foot p {
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+.legal .foot div {
+  font-size: 14px;
+  margin-top: 10px;
+  color: #6b7280;
+}
+.legal .foot div .item:hover {
+  text-decoration: underline;
+}

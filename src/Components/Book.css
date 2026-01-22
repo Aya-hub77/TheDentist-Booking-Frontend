@@ -1,0 +1,100 @@
+.booking {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y:scroll;
+    padding: 60px 0;
+}
+.booking .form {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 30px 25px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    max-width: 90%;
+    position: absolute;
+    top: 30px;
+    margin-bottom: 30px;
+}
+.booking .header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+.booking h2 {
+    font-size: 24px;
+    color: #01180E;
+    font-weight: 600;
+}
+.booking .header .close {
+    font-size: 30px;
+    cursor: pointer;
+    padding: 3px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+.booking .header .close:hover {
+    background-color: #f0f0f0;
+}
+.booking label {
+    display: block;
+    text-align: left;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: #333;
+}
+.booking input {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+    font-size: 16px;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+.booking input:focus {
+    outline: none;
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+.booking button {
+    width: 100%;
+    padding: 12px 0;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+.booking button:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+}
+.booking .success {
+  background-color: #e6ffed;
+  color: #2d7a2d;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-weight: 700;
+}
+.booking .error {
+  background-color: #ffe6e6;
+  color: #b00020;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-weight: 700;
+}
