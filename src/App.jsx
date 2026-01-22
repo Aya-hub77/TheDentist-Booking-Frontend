@@ -30,7 +30,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-        <Route path="/terms&conditions" element={<Terms />} />
+        <Route path="/terms-and-conditions" element={<Terms />} />
         <Route path="/admin" element={<PrivateRoute user={user} ><Admin /></PrivateRoute>} />
         <Route path="/login" element={<AdminAuth setUser={setUser} user={user} />} />
       </Routes>
