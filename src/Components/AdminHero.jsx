@@ -3,7 +3,7 @@ import './Admin.css'
 import axios from 'axios';
 
 const AdminHero = () => {
-    const API_URL = import.meta.env.VITE_API_URL;
+    const API_URL = "/api";
     const today = new Date();
     const dateString = today.toDateString();
     const [cards, setCards] = useState([]);

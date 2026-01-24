@@ -5,7 +5,7 @@ import { IoIosCall } from "react-icons/io";
 import { IoLocationSharp } from "react-icons/io5";
 
 const Banner = () => {
-  const API_URL = import.meta.env.VITE_API_URL;
+  const API_URL = "/api";
     const [phone, setPhone] = useState("");
     const [address, setAddress] = useState("");
 

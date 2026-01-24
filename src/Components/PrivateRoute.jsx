@@ -6,7 +6,7 @@ const PrivateRoute = ({ children }) => {
   const [loading, setLoading] = useState(true);
   const [authorized, setAuthorized] = useState(false);
   const navigate = useNavigate();
-  const API_URL = import.meta.env.VITE_API_URL;
+  const API_URL = "/api";
 
   useEffect(() => {
     axios.get(`${API_URL}/stats`, { withCredentials: true })

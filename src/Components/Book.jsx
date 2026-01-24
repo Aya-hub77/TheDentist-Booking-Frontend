@@ -5,7 +5,7 @@ import { IoClose } from "react-icons/io5";
 import axios from 'axios';
 
 const Book = ({show, setShow}) => {
-    const API_URL = import.meta.env.VITE_API_URL;
+    const API_URL = "/api";
       const service = [
         { value: "dental checkup", label: "Dental Checkup" },
         { value: "root canal", label: "Root Canal" },

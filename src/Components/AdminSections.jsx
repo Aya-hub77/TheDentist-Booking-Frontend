@@ -5,7 +5,7 @@ import axios from 'axios'
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, PieChart, Pie, Cell, Legend } from "recharts";
 
 const AdminSections = () => {
-    const API_URL = import.meta.env.VITE_API_URL;
+    const API_URL = "/api";
     const [filter, setFilter] = useState("");
     const period = [
         { value: "today", label: "Today" },

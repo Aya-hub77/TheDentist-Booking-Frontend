@@ -7,7 +7,7 @@ import { FaFacebook } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 
 const Contact = () => {
-  const API_URL = import.meta.env.VITE_API_URL;
+  const API_URL = "/api";
     const currentYear = new Date().getFullYear();
 
     const [phone, setPhone] = useState("");

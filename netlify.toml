@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "/api/*"
+  to = "https://thedentist-booking-backend.onrender.com/:splat"
+  status = 200
+  force = true

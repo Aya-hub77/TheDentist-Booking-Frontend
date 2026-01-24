@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 import axios from 'axios'
 
 const Terms = () => {
-    const API_URL = import.meta.env.VITE_API_URL;
+    const API_URL = "/api";
     const currentYear = new Date().getFullYear();
     const [email, setEmail] = useState("");
     const [phone, setPhone] = useState("");
