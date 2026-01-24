@@ -1,11 +1,9 @@
 import React, {useState, useEffect} from 'react'
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
 import '../Components/AdminAuth.css'
 
 const AdminAuth = () => {
     const API_URL = import.meta.env.VITE_API_URL;
-    const navigate = useNavigate();
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [error, setError] = useState("");
@@ -15,7 +13,7 @@ const AdminAuth = () => {
         try {
             const res = await axios.post(`${API_URL}/login`, { email, password }, { withCredentials: true });
             console.log(res);
-            navigate("/admin", { replace: true });
+            window.location.href = "/admin";
         } catch (err) {
             setError(err.response?.data?.message || "Login failed");
         }
