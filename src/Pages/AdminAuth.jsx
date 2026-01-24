@@ -3,7 +3,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import '../Components/AdminAuth.css'
 
-const AdminAuth = ({setUser, user}) => {
+const AdminAuth = () => {
     const API_URL = import.meta.env.VITE_API_URL;
     const navigate = useNavigate();
     const [email, setEmail] = useState("");
@@ -14,14 +14,12 @@ const AdminAuth = ({setUser, user}) => {
         e.preventDefault();
         try {
             const res = await axios.post(`${API_URL}/login`, { email, password }, { withCredentials: true });
-            setUser(res.data.user);
+            console.log(res);
+            navigate("/admin", { replace: true });
         } catch (err) {
             setError(err.response?.data?.message || "Login failed");
         }
     };
-    useEffect(() => {
-        if (user) navigate("/admin", { replace: true });
-    }, [user, navigate]);
 
     useEffect(() => { document.title = "TheDentist - Admin Login"; }, []);
 
