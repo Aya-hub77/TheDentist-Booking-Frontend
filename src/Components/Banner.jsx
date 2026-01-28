@@ -5,14 +5,13 @@ import { IoIosCall } from "react-icons/io";
 import { IoLocationSharp } from "react-icons/io5";
 
 const Banner = () => {
-  const API_URL = "/api";
     const [phone, setPhone] = useState("");
     const [address, setAddress] = useState("");
 
   useEffect(() => {
     const bannerData = async () => {
       try {
-        const res = await axios.get(`${API_URL}/contact`, { withCredentials: true });
+        const res = await axios.get("https://the-dentist-booking-frontend.vercel.app/api/contact", { withCredentials: true });
         setPhone(res.data.phone);
         setAddress(res.data.address);
       } catch (err) {
@@ -20,7 +19,7 @@ const Banner = () => {
       }
     };
     bannerData();
-  }, [API_URL]);
+  }, []);
 
    return (
       <header className='banner'>
