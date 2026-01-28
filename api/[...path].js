@@ -3,9 +3,12 @@ import fetch from "node-fetch";
 export default async function handler(req, res) {
   try {
     const backend = "https://thedentist-booking-backend.onrender.com";
-    const path = req.query.path ? req.query.path.join("/") : "";
+    let path = req.query.path ? req.query.path.join("/") : "";
+    path = path.replace(/^\/|\/$/g, "");
     const query = req.url.includes("?") ? req.url.split("?")[1] : "";
-    const url = `${backend}/${path}${query ? "?" + query : ""}`;
+    const url = query ? `${backend}/${path}?${query}` : `${backend}/${path}`;
+
+    console.log("Forwarding request to backend:", url);
 
     const response = await fetch(url, {
       method: req.method,
