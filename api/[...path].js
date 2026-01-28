@@ -3,8 +3,7 @@ import fetch from "node-fetch";
 export default async function handler(req, res) {
   try {
     const backend = "https://thedentist-booking-backend.onrender.com";
-    let path = req.query.path ? req.query.path.join("/") : "";
-    path = path.replace(/^\/|\/$/g, "");
+    const path = req.url.replace(/^\/api/, "").replace(/^\//, "");
     const query = req.url.includes("?") ? req.url.split("?")[1] : "";
     const url = query ? `${backend}/${path}?${query}` : `${backend}/${path}`;
 
