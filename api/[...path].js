@@ -18,7 +18,7 @@ export default async function handler(req, res) {
       body:
         req.method === "GET" || req.method === "HEAD"
           ? undefined
-          : req.body,
+          : JSON.stringify(req.body),
     });
     const text = await response.text();
 
